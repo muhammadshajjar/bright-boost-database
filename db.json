@@ -1,16 +1,773 @@
 {
-  "posts":[
+  "students": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": 1,
+      "firstname": "zeeshan",
+      "lastname": "naseeb",
+      "email": "zeeshan@test.com",
+      "password": 123456
+    },
+    {
+      "id": 2,
+      "firstname": "haider",
+      "lastname": "ali",
+      "email": "haider@test.com",
+      "password": 123456
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "email": "raja@test.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "email": "m@m.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "email": "t@t.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "firstname": "Wasif",
+      "lastname": "Shahid",
+      "email": "wasif@test.com",
+      "password": "123456",
+      "id": 7
     }
   ],
-  "comments" : [
+  "tutors": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": 1,
+      "firstname": "sikander",
+      "lastname": "bakht",
+      "email": "sikander@test.com",
+      "password": 123456,
+      "expertiseArea": ["IT", "Business"]
+    },
+    {
+      "id": 2,
+      "firstname": "raja",
+      "lastname": "shajjar",
+      "email": "shajjar@test.com",
+      "password": 123456,
+      "expertiseArea": ["IT", "Business"]
+    },
+    {
+      "firstname": "talha",
+      "lastname": "arshad",
+      "email": "talha@test.com",
+      "password": 123456,
+      "expertiseArea": ["IT", "networking"],
+      "id": 3
+    },
+    {
+      "firstname": "Muhammad",
+      "lastname": "Shajjar",
+      "email": "tt@test.com",
+      "password": "123456",
+      "expertiseArea": ["TEST "],
+      "id": 4
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": 123456,
+      "firstname": "admin",
+      "lastname": "admin"
+    }
+  ],
+  "session": [
+    {
+      "date": "2023-09-17",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 1
+        },
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 7
+    },
+    {
+      "date": "2023-09-19",
+      "studentsAttended": 0,
+      "questionsAnswered": 2,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 8
+    },
+    {
+      "date": "2023-09-20",
+      "studentsAttended": 20,
+      "questionsAnswered": 10,
+      "tutorsJoind": [
+        {
+          "tutorID": 1
+        },
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 4
+    },
+    {
+      "date": "2023-09-21",
+      "studentsAttended": 4,
+      "questionsAnswered": 23,
+      "tutorsJoind": [
+        {
+          "tutorID": 4
+        }
+      ],
+      "id": 10
+    },
+    {
+      "date": "2023-09-22",
+      "studentsAttended": 23,
+      "questionsAnswered": 23,
+      "tutorsJoind": [
+        {
+          "tutorID": 4
+        }
+      ],
+      "id": 11
+    },
+    {
+      "date": "2023-09-25",
+      "studentsAttended": 45,
+      "questionsAnswered": 32,
+      "tutorsJoind": [
+        {
+          "tutorID": 4
+        }
+      ],
+      "id": 12
+    },
+    {
+      "date": "2023-09-26",
+      "studentsAttended": 1,
+      "questionsAnswered": 12,
+      "tutorsJoind": [],
+      "id": 13
+    },
+    {
+      "date": "2023-09-27",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 14
+    },
+    {
+      "date": "2023-09-29",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 15
+    },
+    {
+      "date": "2023-09-30",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 16
+    },
+    {
+      "date": "2023-10-01",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 17
+    },
+    {
+      "date": "2023-10-02",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 18
+    },
+    {
+      "date": "2023-10-03",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 19
+    },
+    {
+      "date": "2023-10-04",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 20
+    },
+    {
+      "date": "2023-10-11",
+      "studentsAttended": 1,
+      "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 3
+        }
+      ],
+      "id": 21
+    },
+    {
+      "date": "2023-10-12",
+      "studentsAttended": 2,
+      "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 22
+    },
+    {
+      "date": "2023-10-14",
+      "studentsAttended": 3,
+      "questionsAnswered": 2,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 1
+        }
+      ],
+      "id": 23
+    },
+    {
+      "date": "2023-10-15",
+      "studentsAttended": 2,
+      "questionsAnswered": 1,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 24
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Information T."
+    },
+    {
+      "id": 2,
+      "title": "Business"
+    },
+    {
+      "id": 3,
+      "title": "Law"
+    },
+    {
+      "id": 4,
+      "title": "Management"
+    },
+    {
+      "id": 5,
+      "title": "Science"
+    },
+    {
+      "id": 6,
+      "title": "Engineering"
+    }
+  ],
+  "threads": [
+    {
+      "id": 1,
+      "title": "Linux",
+      "questions": [
+        {
+          "id": "0.2151985695180425",
+          "title": "TEST?",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-16T11:27:38.146Z",
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:20:23.686Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:45:32.823Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.6305490236467137",
+          "title": "Anotehr teset",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-16T11:27:44.990Z",
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:41:06.003Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:47:07.183Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.537736214470051",
+          "title": "Anotehr test",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T13:45:56.037Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:46:01.389Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:48:15.735Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.33717383714262805",
+          "title": "teset?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T13:47:08.540Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:47:12.588Z",
+            "completed": true,
+            "completedAt": "2023-09-16T15:02:21.438Z"
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-16T15:02:12.227Z",
+              "content": "a particular process or method for trying or assessing. a set of questions, problems, or the like, used as a means of evaluating the abilities, aptitudes, ..."
+            }
+          ]
+        },
+        {
+          "id": "0.9743463850127512",
+          "title": "New Qeustion",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T14:34:07.157Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T14:34:11.319Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:53:38.662Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.05419392692127056",
+          "title": "TEST?",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-20T09:19:49.480Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-02T10:56:26.839Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.5568825802870359",
+          "title": "What is LInux?",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-20T16:47:45.126Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": []
+        },
+        {
+          "id": "0.7279735797585183",
+          "title": "What is difference between 1 ADnd 2",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-20T16:47:45.126Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": []
+        }
+      ],
+      "categoryId": 1
+    },
+    {
+      "title": "Windows",
+      "questions": [
+        {
+          "id": "0.7723862769128929",
+          "title": "What is windows",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-16T09:15:29.018Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:42:18.068Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-16T09:16:29.978Z",
+              "content": "Microsoft Windows is a group of several proprietary graphical operating system families developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry. "
+            },
+            {
+              "reply": "Wasif Shahid",
+              "repliedAt": "2023-09-25T07:22:55.883Z",
+              "content": "Sir i have query Wtf!!!"
+            }
+          ]
+        },
+        {
+          "id": "0.09329037408277685",
+          "title": "TEST?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T13:43:08.116Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:43:50.571Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": []
+        }
+      ],
+      "categoryId": "1",
+      "id": 12
+    },
+    {
+      "title": "Economics",
+      "questions": [
+        {
+          "id": "0.5349031975303922",
+          "title": "What is Ecnomics?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T14:55:17.623Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T14:55:21.416Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:55:26.830Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.10090959425690671",
+          "title": "can you please brief me ",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-26T10:25:21.743Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": [
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:48:47.198Z",
+              "content": "test\n"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:49:04.380Z",
+              "content": "Another answer submitted"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:51:22.389Z",
+              "content": "test1"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:52:36.449Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:53:22.595Z",
+              "content": "dtestses"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:53:59.493Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:55:54.801Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:56:31.351Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:57:34.625Z",
+              "content": "antoehr test"
+            }
+          ]
+        }
+      ],
+      "categoryId": "2",
+      "id": 13
+    },
+    {
+      "title": "ICT",
+      "questions": [
+        {
+          "id": "0.11970182749036273",
+          "title": "What is ICT",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-19T06:57:03.631Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": []
+        }
+      ],
+      "categoryId": "1",
+      "id": 14
+    },
+    {
+      "title": "P&DC",
+      "questions": [
+        {
+          "id": "0.6797428774815484",
+          "title": "What is P&DC",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-20T16:49:40.042Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-20T16:50:35.135Z",
+            "completed": true,
+            "completedAt": "2023-09-20T16:51:17.065Z"
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-20T16:51:02.641Z",
+              "content": "Processing and distribution center\nProcessing and distribution center (P&DC) — an organizational entity, subordinate to an area, with significant responsibility for the processing and distribution of mail for a geographic area. A P&DC may have one or more reporting facilities."
+            }
+          ]
+        },
+        {
+          "id": "0.7969161498036332",
+          "title": "What is TEST?",
+          "askedby": "Wasif Shahid",
+          "askedat": "2023-09-25T07:24:44.401Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-15T06:47:55.144Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-15T06:48:03.364Z",
+              "content": "This is only test>>>"
+            }
+          ]
+        },
+        {
+          "id": "0.8130812192065922",
+          "title": "TEST",
+          "askedby": "raja shajjar",
+          "askedat": "2023-10-15T06:48:08.088Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-15T06:48:12.364Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": []
+        }
+      ],
+      "categoryId": "1",
+      "id": 15
+    },
+    {
+      "title": "Test",
+      "questions": [
+        {
+          "id": "0.3782732729485945",
+          "title": "TEst quezetion",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-20T17:15:38.018Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": [
+            {
+              "reply": "zeeshan naseeb",
+              "repliedAt": "2023-09-20T17:15:48.268Z",
+              "content": "This is also test"
+            }
+          ]
+        }
+      ],
+      "categoryId": "1",
+      "id": 16
+    },
+    {
+      "title": "IT",
+      "questions": [
+        {
+          "id": "0.09763133050227113",
+          "title": "TEST?",
+          "askedby": "Muhammad Shajjar",
+          "askedat": "2023-09-21T04:50:32.992Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "Muhammad Shajjar",
+            "assignedAt": "2023-09-21T04:50:43.094Z",
+            "completed": true,
+            "completedAt": "2023-09-21T06:14:16.713Z"
+          },
+          "discussion": [
+            {
+              "reply": "Muhammad Shajjar",
+              "repliedAt": "2023-09-21T06:13:16.959Z",
+              "content": "Test is the qustion used for test the project and It will surely used for that purpose only?\n"
+            }
+          ]
+        },
+        {
+          "id": "0.5839809806717002",
+          "title": "What is LInux?",
+          "askedby": "Muhammad Shajjar",
+          "askedat": "2023-09-21T04:53:17.760Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "Muhammad Shajjar",
+            "assignedAt": "2023-09-21T04:53:30.293Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.052406154532653515",
+          "title": "TEST?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-21T05:30:25.811Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-21T05:36:07.749Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-21T05:36:21.001Z",
+              "content": "What is test i will tell you? don't worry."
+            },
+            {
+              "reply": "zeeshan naseeb",
+              "repliedAt": "2023-09-21T06:11:08.496Z",
+              "content": "Yeah I understand it little bit and i'll continue develping it near futture."
+            }
+          ]
+        }
+      ],
+      "categoryId": "6",
+      "id": 17
+    },
+    {
+      "title": "Biology",
+      "questions": [
+        {
+          "id": "0.7710071719180343",
+          "title": "What is Biology",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-10-09T04:14:48.619Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-09T04:15:06.304Z",
+            "completed": true,
+            "completedAt": "2023-10-09T04:18:29.103Z"
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-09T04:15:22.538Z",
+              "content": "I'll tell you this in the future be patient!!"
+            },
+            {
+              "reply": "zeeshan naseeb",
+              "repliedAt": "2023-10-09T04:16:34.622Z",
+              "content": "OKay sir i'm waiting for your response and i don't have much time please make it quick :)"
+            },
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-09T04:18:21.643Z",
+              "content": "Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field. For instance, all organisms are made up of cells that process hereditary information encoded in genes, which can be transmitted to future generations."
+            }
+          ]
+        }
+      ],
+      "categoryId": "5",
+      "id": 18
+    },
+    {
+      "title": "new Thread",
+      "questions": [
+        {
+          "id": "0.13603489887286435",
+          "title": "TEST question",
+          "askedby": "sikander bakht",
+          "askedat": "2023-10-14T12:57:59.134Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "sikander bakht",
+            "assignedAt": "2023-10-14T13:38:03.544Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:58:11.437Z",
+              "content": "i want to like to answer this question"
+            }
+          ]
+        }
+      ],
+      "categoryId": "2",
+      "id": 19
+    },
+    {
+      "title": "TESTTTS",
+      "questions": [],
+      "categoryId": "1",
+      "id": 20
     }
   ]
 }
